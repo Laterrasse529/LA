@@ -14,7 +14,7 @@
       Catégorie | Catégorie_EN | Icône | Nom | Description | Prix
    ============================================ */
 
-const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSeoRgSNSU5TPluaHf-7aluLW2a_uLYdCbT4aRlNorYGu_xUsTsvtnGVJOmyXvB3WgauKN6y079FSuX/pub?output=csv";
+const SHEET_CSV_URL = "";
 
 /* Catégories par défaut si le Google Sheet n'est pas encore configuré */
 const DEFAULT_MENU = [
