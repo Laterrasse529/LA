@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="La Terrasse Café & Resto – Menu Digital, Korba, Tunisia" />
+  <title>La Terrasse – Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="leaf leaf-left" aria-hidden="true"></div>
+    <div class="leaf leaf-right" aria-hidden="true"></div>
+
+    <div class="logo-wrap">
+      <img src="logo.png" alt="La Terrasse Logo" class="logo-img" onerror="this.replaceWith(document.querySelector('.logo-svg-fallback').cloneNode(true))" />
+      <svg class="logo-svg-fallback" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="45" cy="45" r="42" stroke="#8B6F47" stroke-width="2"/>
+        <polygon points="45,10 75,70 15,70" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
+        <line x1="45" y1="10" x2="45" y2="70" stroke="#8B6F47" stroke-width="1.5"/>
+        <line x1="30" y1="40" x2="60" y2="40" stroke="#8B6F47" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <div class="brand">
+      <h1 class="brand-name">La Terrasse</h1>
+      <p class="brand-sub">Café &amp; Resto</p>
+    </div>
+
+    <blockquote class="tagline">
+      <p class="tagline-fr">«&nbsp;À La Terrasse, chaque café raconte une rencontre,<br>chaque plat partage un moment.&nbsp;»</p>
+      <p class="tagline-en">At La Terrasse, every coffee tells a story,<br>and every dish is made to be shared.</p>
+    </blockquote>
+
+    <!-- INFO BAR -->
+    <div class="info-bar">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <span class="info-label">Adresse</span>
+        <span class="info-value">HVG7+J62,<br>Korba, Tunisia</span>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <span class="info-icon">🕐</span>
+        <span class="info-label">Horaires</span>
+        <span class="info-value">7h – 01h<br>Tous les jours</span>
+      </div>
+      <div class="info-divider"></div>
+      <div class="info-item">
+        <span class="info-icon">📶</span>
+        <span class="info-label">Wifi</span>
+        <span class="info-value">Détails à venir</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU CATEGORIES -->
+  <main class="menu-main">
+    <div id="menu-loading" class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement du menu…</p>
+    </div>
+    <div id="menu-error" class="error-state hidden">
+      <p>⚠️ Impossible de charger le menu.<br>Veuillez réessayer.</p>
+      <button onclick="loadMenu()">Réessayer</button>
+    </div>
+    <div id="menu-container" class="hidden"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <span class="merci-script">Merci</span>
+      <div class="footer-text">
+        <p>Merci de choisir La Terrasse.</p>
+        <p>Thank you for choosing La Terrasse.</p>
+      </div>
+    </div>
+    <a href="https://wa.me/yourNumber" class="whatsapp-btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.857L0 24l6.335-1.509A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.493-5.19-1.357l-.37-.219-3.762.896.957-3.663-.241-.381A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      WhatsApp
+    </a>
+    <div class="footer-bar">La Terrasse Café &amp; Resto ♡</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
